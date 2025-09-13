@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my website</title>
+
+    <!-- Use FontAwesome 4.7 (Same as in the video) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/Tanuna_Logo.jpg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Close Icon -->
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Hamburger Icon -->
+        </nav>
+
+        <div class="text-box">
+            <h1>Welcome to my website</h1>
+            <p>This is a paragraph of text.<br> It can be multiple lines if you want it to be.</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>        
+    </section>
+
+    <!-- ---------Course-------------- -->
+     <section class="course">
+        <h1>Courses We Offer</hl>
+        <p>Lorem ipsum dolor sit amet,</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque aliquet turpis nulla, eleifend faucibus est
+                sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                Donec sit.</p>
+        </div>
+        <div class="course-col">
+            <h3>degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+            Donec sit.</p>
+    </div>
+    <div class="course-col">
+        <h3>undergrad</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque aliquet turpis nulla, eleifend faucibus est
+        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+        Donec sit.</p>
+</div>
+        
+    </div>
+<!-- ------- campus --------- -->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolo</p>
+
+    <div class="row">
+         <div class="campus-col">
+            <img src="img/gallery-img-05.jpg">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+         </div>
+         <div class="campus-col">
+            <img src="img/gallery-img-04.jpg">
+            <div class="layer">
+                <h3>INDIA</h3>
+            </div>
+         </div>
+         <div class="campus-col">
+            <img src="img/gallery-img-02.jpg">
+            <div class="layer">
+                <h3>USA</h3>
+            </div>
+         </div>
+    </div>
+    
+</section>
+<!-- ------- facilities --------- -->
+ <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/gallery-tn-01.jpg" >
+            <h3>World Class Library</h3>
+            <p>bla bla bla</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/gallery-tn-02.jpg" >
+            <h3>basket</h3>
+            <p>bla bla bla</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/gallery-img-06.jpg" >
+            <h3>torture</h3>
+            <p>bla bla bla</p>
+        </div>
+    </div>
+ </section>
+<!-- ------- testimonials --------- -->
+ <section class="testimonials">
+    <h1>What our Students Say</h1>
+    <p>vit sucks</p>
+    
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="img/testimonial-img-01.jpg">
+            <div>
+                <p>sad sad</p>
+                <h3>John Doe</h3>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="img/testimonial-img-02.jpg">
+            <div>
+                <p>sad sad</p>
+                <h3>hoe Doe</h3>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+                <i class="fa fa-certificate" ></i>
+            </div>
+        </div>
+        
+    </div>
+
+ </section>
+ <!-- ------- call --------- -->
+  <section class="cta">
+    <h1>Get in touch</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+  </section>
+ <!-- ------- footer --------- -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>bla bla bla</p>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+    </div>
+</section>
+
+
+</section>
+
+
+
+
+
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"; /* Show menu */
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"; /* Hide menu */
+        }
+    </script>
+
+</body>
+</html>
